@@ -6,6 +6,7 @@ if file == 'test.txt':
         lista_voto2 = []
         lista_medie = []
         dict_promossi = {}
+        dict_bocciati = {}
 
         ris = f.readlines()
         for i in range(0, len(ris), 3):
@@ -25,8 +26,10 @@ if file == 'test.txt':
         for k in diz:
             if diz[k] >= 18:
                 dict_promossi[k] = diz[k]
+            else:
+                dict_bocciati[k] = diz[k]
         
-        print(dict_promossi)
+        print 
 else:
     print('inserisci un file valido') 
 # print(dict)
