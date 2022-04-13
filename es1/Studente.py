@@ -1,13 +1,9 @@
 from Persona import Persona
 
 class Studente(Persona):
-    
-    def addCorso(self, corso):
-        self.corso = corso
-        return self.corso
-    
-    def __str__(self):    
-        return str(self.nome) +' '+ str(self.cognome) + ' ha '+ str(self.eta) + ' anni e frequenta'
+    def __init__(self,nome,cognome,eta,corso):
+        super().__init__(nome,cognome,eta)
+        self.corso=corso   
 
-instance = Studente('mario','ciao',22).addCorso('mate')
-print (instance)
+    def __str__(self):
+        return super().__str__()+f' corso dello studente:{self.corso}'

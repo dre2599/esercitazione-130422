@@ -29,7 +29,7 @@ if file == 'test.txt':
             else:
                 dict_bocciati[k] = diz[k]
         
-        print 
+        print (dict_bocciati)
 else:
     print('inserisci un file valido') 
 # print(dict)

@@ -7,7 +7,3 @@ class Persona():
 
     def __str__(self):
         return str(self.nome) +' '+ str(self.cognome) + ' ha '+ str(self.eta) + ' anni '
-
-
-instance = Persona('mario','rossi','25')
-print (instance)
