@@ -1,13 +1,9 @@
-from doctest import OutputChecker
-
-
 def get_key(val,diz):
     for key, value in diz.items():
          if val == value:
              return key
  
     return "key doesn't exist"
-
 
 file = input('inserisci nome del file: ')
 if file == 'test.txt':
